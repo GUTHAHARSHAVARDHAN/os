@@ -30,5 +30,5 @@
 
 #select distinct e.ename from employees e,aircraft a,certified c where e.eid=c.eid and c.aircraft_id=a.aircraft_id and a.aircraft_name='Boeing';
 
-#select a.aircraft_id from aircraft a where a.cruisingrange>(select min(f.distance) from flight f where f.frm='Banglore' and f.too='Delhi')
+#select a.aircraft_id from aircraft a where a.cruisingrange>(select min(f.distance) from flight f where f.frm='Banglore' and f.too='Delhi');
 
